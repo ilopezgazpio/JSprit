@@ -9,7 +9,6 @@ import com.graphhopper.jsprit.core.problem.AbstractJob;
 import com.graphhopper.jsprit.core.problem.Location;
 import com.graphhopper.jsprit.core.problem.VehicleRoutingProblem;
 import com.graphhopper.jsprit.core.problem.constraint.ConstraintManager;
-import com.graphhopper.jsprit.core.problem.constraint.PickupAndDeliverLIFOConstraintHardAct;
 import com.graphhopper.jsprit.core.problem.job.Service;
 import com.graphhopper.jsprit.core.problem.job.Shipment;
 import com.graphhopper.jsprit.core.problem.solution.VehicleRoutingProblemSolution;
@@ -142,7 +141,6 @@ public class Pruebas_Jsprit
                 VehicleImpl truck = VehicleImpl.Builder.newInstance("Generic Truck " + String.valueOf(truck_count++))
                         .setStartLocation(depot)
                         .setType(Truck_type1)
-                        .setCompany("Company")
                         .setReturnToDepot(true)
                         .build();
 
